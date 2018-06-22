@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="../dist/js/jquery-2.0.3.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <form action="">
+        <!--<input type="text" class="form-control"> &lt;!&ndash; 宽度100%, 而且样式美观了, 圆角, 高度提高. &ndash;&gt;-->
+        <div class="form-group"> <!-- form-control 的作用是可以为input 弄一个标签, 贴的很紧 -->
+            <label for="">Username</label>
+            <input type="text" class="form-control" placeholder="your email or username">
+        </div>
+        <div class="form-group"> <!-- form-control 的作用是可以为input 弄一个标签, 贴的很紧 -->
+            <label for="">password</label>
+            <input type="password" class="form-control" placeholder="6-16 characters">
+        </div>
+        <div class="checkbox">
+            <label for="">
+                <input type="checkbox">Remember me.
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+</div>
+</body>
+</html>
