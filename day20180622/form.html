@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
-    <form action="">
+    <form action="" class="">
         <!--<input type="text" class="form-control"> &lt;!&ndash; 宽度100%, 而且样式美观了, 圆角, 高度提高. &ndash;&gt;-->
         <div class="form-group"> <!-- form-control 的作用是可以为input 弄一个标签, 贴的很紧 -->
             <label for="">Username</label>
@@ -19,6 +19,29 @@
         <div class="form-group"> <!-- form-control 的作用是可以为input 弄一个标签, 贴的很紧 -->
             <label for="">password</label>
             <input type="password" class="form-control" placeholder="6-16 characters">
+        </div>
+        <div class="checkbox">
+            <label for="">
+                <input type="checkbox">Remember me.
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <!--- 增加内联表单 --->
+    <form action="" class="form-inline">
+        <!--<input type="text" class="form-control"> &lt;!&ndash; 宽度100%, 而且样式美观了, 圆角, 高度提高. &ndash;&gt;-->
+        <div class="form-group"> <!-- form-control 的作用是可以为input 弄一个标签, 贴的很紧 -->
+            <label class="sr-only">Username</label>
+            <input type="text" class="form-control" placeholder="your email or username">
+        </div>
+        <div class="form-group"> <!-- form-control 的作用是可以为input 弄一个标签, 贴的很紧 -->
+            <label class="sr-only">password</label>
+            <input type="password" class="form-control" placeholder="your password">
         </div>
         <div class="checkbox">
             <label for="">
