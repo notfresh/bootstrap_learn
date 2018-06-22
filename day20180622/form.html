@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
-    <form action="" class="">
+    <form>
         <!--<input type="text" class="form-control"> &lt;!&ndash; 宽度100%, 而且样式美观了, 圆角, 高度提高. &ndash;&gt;-->
         <div class="form-group"> <!-- form-control 的作用是可以为input 弄一个标签, 贴的很紧 -->
             <label for="">Username</label>
@@ -21,7 +21,7 @@
             <input type="password" class="form-control" placeholder="6-16 characters">
         </div>
         <div class="checkbox">
-            <label for="">
+            <label> <!-- label的for属性值一定要清空, 否则点文字就无法生效 -->
                 <input type="checkbox">Remember me.
             </label>
         </div>
@@ -44,13 +44,48 @@
             <input type="password" class="form-control" placeholder="your password">
         </div>
         <div class="checkbox">
-            <label for="">
+            <label>
                 <input type="checkbox">Remember me.
             </label>
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
     </form>
 
+    <br>
+    <br>
+    <br>
+
+    <form action="">
+        <!-- 设置大容量输入框 textarea -->
+        <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">Remember me.
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Option one is this and that&mdash;be sure to include why it's great
+            </label>
+        </div>
+
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                Option one is this and that&mdash;be sure to include why it's great
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option two can be something else and selecting it will deselect option one
+            </label>
+        </div>
+
+
+    </form>
 </div>
 </body>
 </html>
