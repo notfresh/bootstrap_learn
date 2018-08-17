@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <link href="dist2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="dist2/js/bootstrap.min.js"></script>
+    <!-- 栅格系统测试 -->
+</head>
+<body>
+<div class="container">
+
+    <h1>
+        Hello, world!
+    </h1>
+    <div class="row align-items-center"> <!-- row会稍微把container的margin调大一点, 往外占一点 -->
+
+
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-4"> <!-- 使用col-xx-y 的时候又会把外面的空间缩回来, 保持和container保持对齐.-->
+                    <h2 class="page-header">
+                        区域一
+                    </h2>
+                    <p>
+                        Bootstrap has a few easy ways to quickly get started, each one appealing
+                        to a different skill level and use case. Read through to see what suits
+                        your particular needs.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    111111
+                </div>
+                <div class="col">
+                    <h2 class="page-header">
+                        区域三
+                    </h2>
+                    <p>
+                        Within the download you'll find the following directories and files, logically
+                        grouping common resources and providing both compiled and minified variations.
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col">
+                    One of three columns
+                </div>
+                <div class="col">
+                    One of three columns
+                </div>
+                <div class="col">
+                    One of three columns
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col">
+                    One of three columns
+                </div>
+                <div class="col">
+                    One of three columns
+                </div>
+                <div class="col">
+                    One of three columns
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-3"><h1>{{ passage.title }}</h1></div>
+                <div class="col-md-3">
+                    <p>
+                        <button id="ufwordsChoose" class="btn btn-default">Choose the unfamiliar words</button>
+                    </p>
+                </div>
+                <div class="col-md-3"><h1>{{ passage.title }}</h1></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
