@@ -1,0 +1,13 @@
+@color_red: red;
+@width: 100px;
+@width2: @width * 2;
+
+.test1{
+  width: @width;
+  height: @width*3;
+}
+
+.test2{
+  .test1();
+  background-color: @color_red;
+}
